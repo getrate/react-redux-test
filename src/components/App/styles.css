@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+html div.disclaimer, body div.disclaimer {
+  font-size: 10px;
+  line-height: 20px;
+  width: 50%;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+html div.wrapper, body div.wrapper {
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html div.wrapper input, body div.wrapper input {
+  color: black;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 20px 2px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  height: 50px;
+  text-align: center;
+  transition: border ease-in-out 200ms;
+}
+html div.wrapper input:focus, body div.wrapper input:focus {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+html div.wrapper .filters, body div.wrapper .filters {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+html div.wrapper .filters button, body div.wrapper .filters button {
+  background: none;
+  border: none;
+}
+html div.wrapper .submit-button, body div.wrapper .submit-button {
+  display: inline-block;
+  background: rgba(76, 175, 80, 0.8);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  transition: background ease-in 100ms;
+  border-radius: 4px;
+}
+html div.wrapper .submit-button:active, body div.wrapper .submit-button:active {
+  background: #4caf50;
+}
+html div.wrapper ul, body div.wrapper ul {
+  box-sizing: content-box;
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: inside circle;
+}
+html div.wrapper ul li, body div.wrapper ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 15px;
+  background: #fafa91;
+  width: 100%;
+  margin: 1px;
+}
+html div.wrapper ul li button, body div.wrapper ul li button {
+  color: red;
+  opacity: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: opacity 250ms ease-in;
+}
+html div.wrapper ul li button:focus, body div.wrapper ul li button:focus {
+  outline: none;
+}
+html div.wrapper ul li:hover button, body div.wrapper ul li:hover button {
+  opacity: 1;
+}
